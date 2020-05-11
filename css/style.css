@@ -1,0 +1,543 @@
+@import "https://fonts.googleapis.com/css2?family=Shadows+Into+Light&family=Titillium+Web&display=swap";
+html {
+  scroll-behavior: smooth; }
+
+.clear {
+  clear: both; }
+
+.navbar {
+  background-color: #f4f6fb;
+  font-family: "Titillium Web", sans-serif;
+  z-index: 999 !important; }
+  .navbar .navbar-nav {
+    font-size: 18px; }
+    .navbar .navbar-nav .nav-item {
+      position: relative; }
+      .navbar .navbar-nav .nav-item .nav-wave {
+        position: absolute;
+        left: 17%;
+        top: 80%; }
+  .navbar .navbar-brand {
+    padding: 0 !important;
+    margin: 0 !important; }
+    .navbar .navbar-brand img {
+      width: 25% !important; }
+  .navbar .logo-slag {
+    font-size: 25px;
+    display: inline-block; }
+    .navbar .logo-slag .water {
+      color: #00c3ed; }
+  .navbar .number {
+    font-size: 18px; }
+
+.desktop-navbar .navbar-nav {
+  position: absolute;
+  left: 40%; }
+.desktop-navbar .navbar-brand {
+  padding: 0 !important;
+  margin: 0 !important; }
+  .desktop-navbar .navbar-brand img {
+    width: 85% !important; }
+
+.mobile-navbar {
+  display: none; }
+  .mobile-navbar .navbar-collapse {
+    text-align: left;
+    margin-top: 10px; }
+    .mobile-navbar .navbar-collapse li {
+      margin-top: 6px; }
+  .mobile-navbar .phone-number-mobile {
+    display: inline-block;
+    margin-top: 10px; }
+  .mobile-navbar .fa-phone-alt {
+    margin-top: 20px; }
+
+.header {
+  background-image: url("../images/header-image.png");
+  background-size: cover;
+  height: 90vh;
+  position: relative; }
+  .header .wave {
+    width: 99%;
+    margin: 0 auto;
+    position: absolute;
+    bottom: -18px; }
+  .header .header-images img {
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 30%; }
+  .header .header-images img:first-child {
+    z-index: 8; }
+  .header .header-images img:nth-child(2) {
+    left: 40%;
+    z-index: 7; }
+  .header .header-images img:last-child {
+    left: 60%;
+    z-index: 7; }
+  .header .header-content {
+    text-align: center;
+    padding-top: 25px; }
+    .header .header-content h5,
+    .header .header-content h6 {
+      padding: 0;
+      margin: 0;
+      margin-top: 20px; }
+    .header .header-content h6 {
+      color: #ffa21d;
+      font-family: "Shadows Into Light", cursive;
+      font-size: 25px; }
+    .header .header-content h5 {
+      font-size: 50px;
+      font-weight: bold;
+      color: #081340;
+      font-family: "Titillium Web", sans-serif;
+      margin-bottom: 8px; }
+    .header .header-content .btn {
+      background-color: #00c3ed;
+      border: 0;
+      border: 1px solid #00c3ed;
+      color: #fff;
+      padding: 10px; }
+
+.servisec {
+  margin-top: 130px; }
+  .servisec .section-header {
+    position: relative;
+    font-family: "Titillium Web", sans-serif; }
+    .servisec .section-header h6 {
+      color: #ffa21d; }
+    .servisec .section-header h4 {
+      font-size: 40px;
+      font-weight: bold;
+      color: #081340; }
+    .servisec .section-header .section-wave {
+      position: absolute;
+      top: 55%;
+      left: 49%; }
+  .servisec .serv-img {
+    margin: 0 auto;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    border: 1px solid #00c3ed;
+    background-color: #00c3ed;
+    border-radius: 50%;
+    transition: all 0.5s ease; }
+    .servisec .serv-img:hover {
+      border: 1px solid #081340;
+      background-color: #081340; }
+  .servisec .serv-content {
+    font-family: "Titillium Web", sans-serif;
+    margin-top: 20px; }
+    .servisec .serv-content h6 {
+      color: #081340;
+      font-size: 20px; }
+    .servisec .serv-content p {
+      color: #666; }
+    .servisec .serv-content a {
+      color: #081340;
+      text-decoration: none; }
+      .servisec .serv-content a:hover {
+        color: #00c3ed; }
+      .servisec .serv-content a i {
+        color: #ffa21d; }
+
+.our-video {
+  margin-top: 120px;
+  padding-top: 70px;
+  background-image: url("../images/header.png");
+  height: 90vh;
+  background-size: cover; }
+  .our-video .section-header {
+    margin-bottom: 40px;
+    font-family: "Shadows Into Light", cursive;
+    color: #fff; }
+    .our-video .section-header h6 {
+      font-size: 20px; }
+    .our-video .section-header h4 {
+      font-weight: bold;
+      font-family: "Titillium Web", sans-serif;
+      font-size: 30px; }
+  .our-video .video {
+    background-image: url("../images/video.png");
+    height: 80vh;
+    background-size: 70%;
+    background-position: top;
+    background-repeat: no-repeat; }
+    .our-video .video .fa-play {
+      position: absolute;
+      top: 40%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      border: 1px solid #fff;
+      background-color: #fff;
+      width: 70px;
+      height: 70px;
+      line-height: 70px;
+      border-radius: 50%; }
+
+.our-product {
+  font-family: "Titillium Web", sans-serif;
+  background-color: #f3f9ff;
+  margin-top: -15px;
+  padding-top: 100px; }
+  .our-product .section-header {
+    position: relative;
+    margin-bottom: 20px; }
+    .our-product .section-header h4,
+    .our-product .section-header h6 {
+      margin: 0;
+      padding: 0; }
+    .our-product .section-header h6 {
+      color: #ffa21d; }
+    .our-product .section-header h4 {
+      font-size: 40px;
+      font-weight: bold;
+      color: #081340; }
+    .our-product .section-header .section-wave {
+      position: absolute;
+      top: 97%;
+      left: 49%; }
+  .our-product .card {
+    padding: 5px;
+    margin-top: 2rem;
+    padding-bottom: 10px;
+    border: 1px solid #fff !important; }
+    .our-product .card img {
+      width: 70%;
+      margin: auto;
+      margin-top: 10px; }
+    .our-product .card .card-title {
+      background-color: #999;
+      color: #fff;
+      border-radius: 12px;
+      font-size: 15px;
+      width: 50%;
+      margin: auto;
+      margin-bottom: 10px;
+      padding: 5px; }
+    .our-product .card .card-text {
+      color: #555; }
+  .our-product .view-all {
+    width: 100%; }
+    .our-product .view-all .btn {
+      margin: auto;
+      margin-top: 20px;
+      background-color: #ffa21d;
+      width: 15%; }
+      .our-product .view-all .btn a {
+        color: #fff !important;
+        text-decoration: none; }
+  .our-product .why {
+    margin-top: 90px;
+    padding: 90px 0px 90px 0px;
+    background-image: linear-gradient(rgba(8, 19, 64, 0.94), rgba(8, 19, 64, 0.94)), url("../images/video.png");
+    background-size: cover;
+    background-position: center; }
+    .our-product .why .wh-content {
+      margin-top: 70px; }
+      .our-product .why .wh-content p {
+        margin-top: 10px;
+        color: #fff; }
+
+.learn-about {
+  padding-top: 90px;
+  background-color: #f3f9ff;
+  padding-bottom: 100px;
+  position: relative; }
+  .learn-about .learn-about-image {
+    background-image: url("../images/learnabout.png");
+    height: 65vh;
+    width: 70%;
+    float: right;
+    background-position: center;
+    margin: 0 auto;
+    background-size: cover; }
+  .learn-about .learn-about-info .section-header {
+    position: relative;
+    margin-top: 15px; }
+    .learn-about .learn-about-info .section-header h6 {
+      color: #ffa21d; }
+    .learn-about .learn-about-info .section-header h4 {
+      font-size: 30px;
+      color: #081340; }
+    .learn-about .learn-about-info .section-header .section-wave {
+      position: absolute;
+      top: 100%;
+      left: 0%; }
+  .learn-about .learn-about-info p {
+    margin-top: 50px;
+    color: #888;
+    line-height: 30px; }
+  .learn-about .learn-about-info .card {
+    width: 30%;
+    margin-top: 20px;
+    float: left;
+    margin-right: 10px;
+    text-align: center;
+    padding-bottom: 5px;
+    border: 1px solid #fff !important;
+    border-radius: 0 !important; }
+    .learn-about .learn-about-info .card h6,
+    .learn-about .learn-about-info .card p {
+      margin: 0; }
+    .learn-about .learn-about-info .card img {
+      width: 30%;
+      margin: auto;
+      margin-top: 10px; }
+    .learn-about .learn-about-info .card .bolle-image {
+      width: 21% !important; }
+    .learn-about .learn-about-info .card h6 {
+      margin-top: 8px;
+      font-size: 30px;
+      color: #081340; }
+    .learn-about .learn-about-info .card p {
+      margin-top: 6px;
+      font-size: 10px;
+      color: #555; }
+  .learn-about .learn-wave {
+    position: absolute;
+    bottom: -3%;
+    width: 100%; }
+
+.news {
+  font-family: "Titillium Web", sans-serif;
+  margin-top: 100px; }
+  .news .section-header {
+    position: relative; }
+    .news .section-header h6 {
+      color: #ffa21d; }
+    .news .section-header h4 {
+      font-size: 35px;
+      color: #081340;
+      font-weight: bold; }
+    .news .section-header .section-wave {
+      position: absolute;
+      top: 100%;
+      left: 48%; }
+  .news .card {
+    border: 1px solid #ddd;
+    border-radius: 0 !important;
+    margin-top: 30px;
+    transition: all 0.5s ease-in-out; }
+    .news .card:hover {
+      background-color: #fff;
+      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15); }
+    .news .card .card-img-top {
+      border-radius: 0 !important; }
+    .news .card .card-title {
+      color: #081340;
+      font-weight: bold;
+      font-size: 25px; }
+      .news .card .card-title a {
+        transition: all .5s linear; }
+        .news .card .card-title a:hover {
+          color: #ffa21d !important; }
+    .news .card .card-text {
+      font-size: 15px;
+      color: #666;
+      margin-top: 14px; }
+    .news .card a {
+      color: #081340 !important;
+      text-decoration: none; }
+      .news .card a i {
+        color: #ffa21d; }
+    .news .card .admin {
+      border-top: 1px solid #ddd;
+      margin-top: 15px;
+      padding: 5px;
+      padding-top: 15px; }
+      .news .card .admin span {
+        font-weight: bold;
+        color: #777;
+        text-transform: capitalize;
+        font-size: 12px; }
+      .news .card .admin span:first-child {
+        float: left; }
+      .news .card .admin span:last-child {
+        float: right; }
+
+.send-us {
+  font-family: "Titillium Web", sans-serif;
+  margin-top: 90px;
+  padding-top: 90px;
+  background-color: #f3f9ff;
+  text-align: center; }
+  .send-us h6 {
+    font-size: 40px;
+    font-weight: bold;
+    color: #081340;
+    margin-bottom: 35px; }
+  .send-us form {
+    background-color: #fff;
+    padding-top: 40px; }
+    .send-us form input {
+      padding: 10px;
+      width: 30% !important;
+      border: 0;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 15px; }
+    .send-us form textarea {
+      width: 90.6%;
+      padding: 10px;
+      margin-top: 20px;
+      border: 0;
+      border-bottom: 1px solid #ddd; }
+    .send-us form button {
+      background-color: #00c3ed;
+      border: 1px solid #00c3ed;
+      padding: 10px;
+      color: #fff;
+      width: 15%;
+      text-transform: capitalize;
+      transition: all 0.5s ease-in-out;
+      font-weight: bold; }
+      .send-us form button:hover {
+        background-color: #ffa21d;
+        border: 1px solid #ffa21d;
+        color: #fff; }
+
+.free-delevery {
+  background-color: #00c3ed;
+  margin-top: 90px;
+  padding-top: 70px; }
+  .free-delevery .free-content h6 {
+    font-size: 25px;
+    font-weight: 500;
+    color: #081340;
+    font-family: "Shadows Into Light", cursive; }
+  .free-delevery .free-content p {
+    font-family: "Titillium Web", sans-serif;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold; }
+  .free-delevery button {
+    font-family: "Titillium Web", sans-serif;
+    margin-top: 50px;
+    background-color: #ffa21d;
+    color: #fff;
+    transition: all .5s ease; }
+    .free-delevery button:hover {
+      color: #fff;
+      background-color: #081340; }
+
+footer {
+  font-family: "Titillium Web", sans-serif;
+  position: relative;
+  padding-top: 65px;
+  background-color: #081340;
+  padding-bottom: 70px; }
+  footer .wave {
+    position: absolute;
+    bottom: -10%;
+    width: 100%; }
+  footer h6 {
+    color: #fff; }
+  footer p {
+    color: #999; }
+  footer .follow a {
+    color: #fff !important;
+    text-decoration: none; }
+    footer .follow a i {
+      width: 40px;
+      height: 40px;
+      line-height: 40px;
+      background-color: #FFA21D;
+      border: 1px solid #FFA21D;
+      border-radius: 50%;
+      font-size: 18px;
+      text-align: center;
+      transition: all .5s ease-in-out; }
+      footer .follow a i:hover {
+        background-color: #00c3ed;
+        border: 1px solid #00c3ed; }
+
+.copy {
+  font-family: "Titillium Web", sans-serif;
+  background-color: #050D2E;
+  padding-bottom: 20px;
+  text-align: center;
+  color: #999;
+  padding-top: 30px; }
+
+@media (max-width: 1024px) {
+  .video {
+    background-size: 232% !important; }
+
+  .header-images img {
+    width: 80% !important; }
+
+  .header-content {
+    padding-top: 200px !important; }
+
+  .learn-about .learn-about-image {
+    width: 70% !important;
+    height: 30vh !important; }
+
+  footer .wave {
+    bottom: -7%; } }
+@media (max-width: 800px) {
+  .desktop-navbar {
+    display: none; }
+
+  .mobile-navbar {
+    display: block; }
+
+  .header-images img {
+    width: 80% !important; }
+
+  .header-content {
+    padding-top: 150px !important; }
+
+  .video {
+    background-size: 208% !important; }
+
+  .learn-about .learn-about-image {
+    width: 100% !important;
+    height: 50vh !important; }
+
+  .send-us form button {
+    width: 50% !important; }
+
+  footer .wave {
+    bottom: -4%; }
+
+  .our-product .card .card-title {
+    width: 65% !important; }
+
+  .our-product .view-all .btn {
+    width: 20% !important; } }
+@media (max-width: 524px) {
+  .header .wave {
+    bottom: -15px !important; }
+
+  .header-images img {
+    width: 80% !important; }
+
+  .header-content {
+    padding-top: 10px !important; }
+
+  .video {
+    background-size: 265% !important; }
+
+  .learn-about-image {
+    width: 100% !important; }
+
+  .send-us form input {
+    width: 100% !important;
+    margin-top: 15px; }
+  .send-us form button {
+    width: 50% !important; }
+
+  .our-product .view-all .btn {
+    width: 50% !important; }
+
+  footer .wave {
+    bottom: -1%; }
+
+  .servisec .section-header .section-wave {
+    top: 40%; } }
+
+/*# sourceMappingURL=style.css.map */
