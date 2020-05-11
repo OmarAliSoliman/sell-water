@@ -222,24 +222,23 @@ html {
   height: 90vh;
   background-size: cover;
   .video {
-    background-image: url("../images/video.png");
-    height: 80vh;
-    background-size: 70%;
-    background-position: top;
-    background-repeat: no-repeat;
-    // background-size: cover;
-    .fa-play {
-      position: absolute;
-      top: 40%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      border: 1px solid #fff;
-      background-color: #fff;
-      width: 70px;
-      height: 70px;
-      line-height: 70px;
-      border-radius: 50%;
+    #video1{
+      // height: 70vh;
+      width: 50%;
     }
+  }
+  .play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid #fff;
+    background-color: #fff;
+    width: 70px;
+    height: 70px;
+    z-index: 22;
+    line-height: 70px;
+    border-radius: 50%;
   }
 }
 
@@ -248,7 +247,7 @@ html {
   font-family: $mainFont;
   background-color: #f3f9ff;
   margin-top: -15px;
-  padding-top: 100px;
+  padding-top: 160px;
   .section-header {
     position: relative;
     margin-bottom: 20px;
@@ -615,7 +614,10 @@ footer{
 
 @media (max-width: 1024px) {
   .video {
-    background-size: 232% !important;
+    #video1{
+      // height: 70vh;
+      width: 100% !important;
+    }
   }
   .header-images {
     img {
@@ -654,9 +656,7 @@ footer{
   .header-content {
     padding-top: 150px !important;
   }
-  .video {
-    background-size: 208% !important;
-  }
+
   .learn-about {
     .learn-about-image {
       width: 100% !important;
@@ -698,9 +698,6 @@ footer{
     padding-top: 10px !important;
   }
 
-  .video {
-    background-size: 265% !important;
-  }
   .learn-about-image {
     width: 100% !important;
   }

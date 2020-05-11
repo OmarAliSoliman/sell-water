@@ -160,29 +160,26 @@ html {
       font-weight: bold;
       font-family: "Titillium Web", sans-serif;
       font-size: 30px; }
-  .our-video .video {
-    background-image: url("../images/video.png");
-    height: 80vh;
-    background-size: 70%;
-    background-position: top;
-    background-repeat: no-repeat; }
-    .our-video .video .fa-play {
-      position: absolute;
-      top: 40%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      border: 1px solid #fff;
-      background-color: #fff;
-      width: 70px;
-      height: 70px;
-      line-height: 70px;
-      border-radius: 50%; }
+  .our-video .video #video1 {
+    width: 50%; }
+  .our-video .play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid #fff;
+    background-color: #fff;
+    width: 70px;
+    height: 70px;
+    z-index: 22;
+    line-height: 70px;
+    border-radius: 50%; }
 
 .our-product {
   font-family: "Titillium Web", sans-serif;
   background-color: #f3f9ff;
   margin-top: -15px;
-  padding-top: 100px; }
+  padding-top: 160px; }
   .our-product .section-header {
     position: relative;
     margin-bottom: 20px; }
@@ -463,8 +460,8 @@ footer {
   padding-top: 30px; }
 
 @media (max-width: 1024px) {
-  .video {
-    background-size: 232% !important; }
+  .video #video1 {
+    width: 100% !important; }
 
   .header-images img {
     width: 80% !important; }
@@ -491,9 +488,6 @@ footer {
   .header-content {
     padding-top: 150px !important; }
 
-  .video {
-    background-size: 208% !important; }
-
   .learn-about .learn-about-image {
     width: 100% !important;
     height: 50vh !important; }
@@ -518,9 +512,6 @@ footer {
 
   .header-content {
     padding-top: 10px !important; }
-
-  .video {
-    background-size: 265% !important; }
 
   .learn-about-image {
     width: 100% !important; }

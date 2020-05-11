@@ -216,9 +216,15 @@
         </div>
         <div class="row">
           <div class="col-sm-12 col-lg-12">
-            <div class="video">
+            <button class="play-button" onclick="playpause()">
               <i class="fas fa-play"></i>
-              <!-- <video></video> -->
+            </button>
+            <div class="video">
+              <video id="video1">
+                <source src="./images/video.mp4" type="video/mp4">
+                <source src="./images/video.ogg" type="video/ogg">
+                Your browser does not support HTML video.
+              </video>
             </div>
           </div>
         </div>
